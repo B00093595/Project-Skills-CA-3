@@ -17,10 +17,10 @@ import javax.swing.JTextField;
 public class LinkedListGUI 
 {
 	private JFrame frame;
-	private JTextField textField;
-	private JTextField textField_1;
-	private JTextField textField_2;
-	private JTextField textField_3;
+	private JTextField addField;
+	private JTextField removeField;
+	private JTextField searchField;
+	private JTextField checkField;
 	private JButton button_2;
 
 	/**
@@ -83,25 +83,25 @@ public class LinkedListGUI
 		button_1.setBounds(53, 178, 116, 25);
 		frame.getContentPane().add(button_1);
 		
-		textField = new JTextField();
-		textField.setBounds(204, 68, 116, 22);
-		frame.getContentPane().add(textField);
-		textField.setColumns(10);
+		addField = new JTextField();
+		addField.setBounds(204, 68, 116, 22);
+		frame.getContentPane().add(addField);
+		addField.setColumns(10);
 		
-		textField_1 = new JTextField();
-		textField_1.setBounds(204, 121, 116, 22);
-		frame.getContentPane().add(textField_1);
-		textField_1.setColumns(10);
+		removeField = new JTextField();
+		removeField.setBounds(204, 121, 116, 22);
+		frame.getContentPane().add(removeField);
+		removeField.setColumns(10);
 		
-		textField_2 = new JTextField();
-		textField_2.setColumns(10);
-		textField_2.setBounds(204, 179, 116, 22);
-		frame.getContentPane().add(textField_2);
+		searchField = new JTextField();
+		searchField.setColumns(10);
+		searchField.setBounds(204, 179, 116, 22);
+		frame.getContentPane().add(searchField);
 		
-		textField_3 = new JTextField();
-		textField_3.setColumns(10);
-		textField_3.setBounds(204, 238, 116, 22);
-		frame.getContentPane().add(textField_3);
+		checkField = new JTextField();
+		checkField.setColumns(10);
+		checkField.setBounds(204, 238, 116, 22);
+		frame.getContentPane().add(checkField);
 		
 		button_2 = new JButton("Check");
 		button_2.addActionListener(new ActionListener() {
