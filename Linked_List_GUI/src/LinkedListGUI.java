@@ -28,7 +28,9 @@ public class LinkedListGUI
 	 * Launch the application.
 	 */
 	ListReferenceBased la = new ListReferenceBased();
-	String addInput = addField.getText();
+	String addInput;
+	
+	/*Start of main method */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -66,9 +68,12 @@ public class LinkedListGUI
 		JButton btnNewButton = new JButton("Add");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				
-				la.add(0,addInput);
-				
+				int index = 0;
+				addInput = addField.getText();
+				if(addInput != null){
+					la.add(index,addInput);
+					index++;
+				}
 			}
 		});
 		btnNewButton.setBounds(53, 67, 116, 25);
