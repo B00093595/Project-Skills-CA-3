@@ -13,6 +13,7 @@ import javax.swing.BoxLayout;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JTextField;
+import java.io.*;
 
 public class LinkedListGUI 
 {
@@ -27,6 +28,9 @@ public class LinkedListGUI
 	 * Launch the application.
 	 */
 	ListReferenceBased la = new ListReferenceBased();
+
+	String addInput;
+	/*Start of main method */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -38,6 +42,7 @@ public class LinkedListGUI
 				}
 			}
 		});
+		
 	}
 
 	/**
@@ -63,7 +68,13 @@ public class LinkedListGUI
 		JButton btnNewButton = new JButton("Add");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				la.add(0,"Jero");
+        
+				int index = 0;
+				addInput = addField.getText();
+				if(addInput != null){
+					la.add(index,addInput);
+					index++;
+				}
 			}
 		});
 		btnNewButton.setBounds(53, 67, 116, 25);
@@ -72,6 +83,8 @@ public class LinkedListGUI
 		JButton button = new JButton("Remove");
 		button.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				
+				
 			}
 		});
 		button.setBounds(53, 120, 116, 25);
@@ -89,6 +102,7 @@ public class LinkedListGUI
 		addField.setBounds(204, 68, 116, 22);
 		frame.getContentPane().add(addField);
 		addField.setColumns(10);
+		
 		
 		removeField = new JTextField();
 		removeField.setBounds(204, 121, 116, 22);
