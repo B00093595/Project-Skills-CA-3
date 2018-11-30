@@ -92,6 +92,9 @@ public class LinkedListGUI
 		JButton button_1 = new JButton("Search");
 		button_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				String s=searchField.getText();
+				
+				la.get(Integer.valueOf(s));
 			}
 		});
 		button_1.setBounds(53, 178, 116, 25);

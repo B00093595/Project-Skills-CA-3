@@ -153,4 +153,14 @@ public class ListReferenceBased implements ListInterface {
     	curr = curr.getNext();
     }
   }
-} // end ListReferenceBased
+  public void check () {
+	  if (isEmpty()==true) {
+		  System.out.println("THE List Is Empty");
+		  
+	  }
+	  else {
+		 System.out.println("Not Empty");
+		  
+	  }
+  }
+}// end ListReferenceBased
