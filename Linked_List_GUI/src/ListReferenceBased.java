@@ -33,7 +33,7 @@ public class ListReferenceBased implements ListInterface {
   // Postcondition: Returns a reference to the desired 
   // node.
   // --------------------------------------------------
-    /*Node curr = head;
+    Node curr = head;
    
     if(index == 0)
     {
@@ -45,9 +45,9 @@ public class ListReferenceBased implements ListInterface {
         {
           curr = curr.getNext(); 
         }//end for
-    }*/
+    }
 	Node prev = null;
-	Node curr = head;
+	
 	   
 	if(index == 0)
     {
