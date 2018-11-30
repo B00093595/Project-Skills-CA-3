@@ -26,6 +26,7 @@ public class LinkedListGUI
 	/**
 	 * Launch the application.
 	 */
+	ListReferenceBased la = new ListReferenceBased();
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -62,6 +63,7 @@ public class LinkedListGUI
 		JButton btnNewButton = new JButton("Add");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				la.add(0,"Jero");
 			}
 		});
 		btnNewButton.setBounds(53, 67, 116, 25);
