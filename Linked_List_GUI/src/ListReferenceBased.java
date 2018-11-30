@@ -33,7 +33,7 @@ public class ListReferenceBased implements ListInterface {
   // Postcondition: Returns a reference to the desired 
   // node.
   // --------------------------------------------------
-    /*Node curr = head;
+    Node curr = head;
    
     if(index == 0)
     {
@@ -45,9 +45,9 @@ public class ListReferenceBased implements ListInterface {
         {
           curr = curr.getNext(); 
         }//end for
-    }*/
+    }
 	Node prev = null;
-	Node curr = head;
+	
 	   
 	if(index == 0)
     {
@@ -153,4 +153,14 @@ public class ListReferenceBased implements ListInterface {
     	curr = curr.getNext();
     }
   }
-} // end ListReferenceBased
+  public void check () {
+	  if (isEmpty()==true) {
+		  System.out.println("THE List Is Empty");
+		  
+	  }
+	  else {
+		 System.out.println("Not Empty");
+		  
+	  }
+  }
+}// end ListReferenceBased

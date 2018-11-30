@@ -93,6 +93,9 @@ public class LinkedListGUI
 		JButton button_1 = new JButton("Search");
 		button_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				String s=searchField.getText();
+				
+				la.get(Integer.valueOf(s));
 			}
 		});
 		button_1.setBounds(53, 178, 116, 25);
@@ -122,6 +125,8 @@ public class LinkedListGUI
 		button_2 = new JButton("Check");
 		button_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				la.check();
+				
 			}
 		});
 		button_2.setBounds(53, 237, 116, 25);
