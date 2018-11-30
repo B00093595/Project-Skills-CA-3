@@ -1,0 +1,10 @@
+(1) We need to make button handlers for the button listeners
+i.e: ADD: add to the linked list , Remove: remove from the linked list, Check:
+See what’s inside the linked list also see if it is empty or not
+  - Jeremiah is responsible for the add function
+  - Ian is responsible for remove function
+  - Sukhdev is responsible for the search and check functions
+(2) We need to link the LinkedListGUI.java with out Linked List methods e.g: use the list tester method as a base and link the two
+(3) Make sure to screen shot pulling, pushing requests don’t need to screenshot every time just once for our main report
+(4) We also have to merge our branches once the changes have been changed
+(5) We also need to create an error to make a conflict, refer to the Project Skills CA 3 Word Doc.
