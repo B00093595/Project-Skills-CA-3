@@ -124,6 +124,8 @@ public class LinkedListGUI
 		button_2 = new JButton("Check");
 		button_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				la.check();
+				
 			}
 		});
 		button_2.setBounds(53, 237, 116, 25);
